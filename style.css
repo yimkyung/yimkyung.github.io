@@ -9,6 +9,21 @@
     src: url("fonts/Pretendard-Regular.otf") format("opentype");
     /*src: url("fonts/Pretendard-Regular.ttf") format("truetype"); 트루타입 폰트인 경우 */
 }
+
+@font-face {
+    font-family: "hand";
+    src: url("hand.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "mujinjang";
+    src: url("mujinjang.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "dos";
+    src: url("dos.ttf") format("truetype");
+}
 /* 웹 상의 폰트 파일을 사용하는 경우 */
 @font-face {
     font-family: 'RixYeoljeongdo_Regular';
@@ -17,12 +32,16 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth; /* 스크롤 시 부드럽게 이동 */
 }
 body {
     margin: 0; padding: 0;
-    font-family: "Pretendard-Regular";
+    font-family: "hand";
     /* background-color: rgb(163, 247, 219); */
 }
 a {
@@ -46,7 +65,7 @@ header 영역 - 로고, 메인메뉴
 #logo {
     position: absolute;
     bottom: 16px;
-    left: 40px;
+    left: 850px;
     font-family: 'RixYeoljeongdo_Regular';
     font-size: 36px;
 }
@@ -56,6 +75,7 @@ header 영역 - 로고, 메인메뉴
     bottom: 16px;
     right: 16px;
     padding-right: 10px;
+    font-family:"Pretendard-Regular" ;
 }
 /* #navmenu 요소에 포함된 a 태그 스타일 설정 */
 #navmenu a {
@@ -76,6 +96,7 @@ header 영역 - 로고, 메인메뉴
 ----------------------------------------------------------------------- */
 
 #main-container {
+    display: flex;
     position: relative;
     width: 960px;
     margin: 0 auto; /* 박스(#main-container)를 뷰포트의 가로 방향 가운데로 정렬 */
@@ -85,25 +106,76 @@ header 영역 - 로고, 메인메뉴
 }
 #featured-image {
     position: relative;
-    width: 100%;
+    width: 50%;
 }
 #featured-image img {
-    width: 100%;
+    position: relative;
+    width: 80%;
+    left: 200px;
 }
 #main-text {
+    width: 50%;
     position: relative;
     font-family: "Pretendard-Regular";
-    font-size: 24px;
+    font-size: 30px;
     line-height: 180%; 
-    text-align: center;
-    /*background-color: blanchedalmond;*/
+    text-align: left;
+    left: 20%;
 }
+#desc {
+    font-weight: bold;
+    background-color: rgb(211, 231, 240);
+    font-size: 50px;
+    font-family: "mujinjang";
+    line-height: 150%;
+
+}
+
 #copyright {
     padding-top: 60px;
     text-align: center;
     font-size: 16px;
 }
 
+#mon-1{
+    text-align: center;
+    font-size: 25px;
+    font-family: "dos";
+    color: midnightblue;
+}
+
+#mun-1{
+    text-align: center;
+    font-size: 30px;
+    font-family: hand;
+
+}
+
+#mon-2{
+    text-align: center;
+    font-size: 25px;
+    font-family: "dos";
+    color: midnightblue;
+}
+
+#mun-2{
+    text-align: center;
+    font-size: 30px;
+    font-family: hand;
+}
+
+#mon-3{
+    text-align: center;
+    font-size: 25px;
+    font-family: "dos";
+    color: midnightblue;
+}
+
+#mun-3{
+    text-align: center;
+    font-size: 30px;
+    font-family: hand;
+}
 
 
 /* -----------------------------------------------------------------------
